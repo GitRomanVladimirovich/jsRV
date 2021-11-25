@@ -1,5 +1,10 @@
-"use strict"
-let product = "Кресло";
-let price = 12000;
-let result = product+", цена "+ price+" рублей";
-alert(result);
+let min = Number(prompt('Введите min число:'));
+let max = Number(prompt('Введите max число:'));
+
+function randomNumber(min, max) {
+  const r = Math.random()*(max-min) + min
+  return Math.floor(r)
+}
+
+// eslint-disable-next-line
+console.log(randomNumber(min, max));
